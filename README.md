@@ -2,18 +2,20 @@ Parse Embedded C SDKs (for Intel IoT Developer Kit)
 ===================================================
 
 These instructions will provide you with a Parse Embedded C SDKs provide
-support for IOTDK platforms such as Intel Galileo, Intel Edison and Intel
-Minnowboard Max.
+support for Intel IoT Developer Kit platforms such as Intel Galileo, Intel
+Edison and Intel Minnowboard Max.
 
 ## Getting started
 
-We provide a binary package for the Parse SDK if you have an IOTDK 1.5 image.
+We provide a binary package for the Parse SDK if you have an Intel IoT
+Developer Kit 1.5 image.
 If your board is not yet configured follow the [Getting Started](https://software.intel.com/en-us/iot/library/edison-getting-started) guide
 to install the latest image and get online. You can also build and run the Parse
 samples with [Eclipse](https://software.intel.com/en-us/iot/downloads#ide).
 Find out more about how to get started with Eclipse [here](https://software.intel.com/en-us/eclipse-getting-started-guide).
 
-First, add the IoTDK repository to the opkg configuration files:
+First, add the Intel IoT Developer Kit repository to the opkg configuration
+files:
 
 ~~~~~~~~~~~~~{.sh}
 echo "src iotdk-all http://iotdk.intel.com/repos/1.5/iotdk/all" >> /etc/opkg/iotkit.conf
@@ -119,7 +121,7 @@ A. We don't make any code changes to the Parse SDK, get the sources from
 https://github.com/ParsePlatform/parse-embedded-sdks
 
 Q. How do I rebuild your ipk package?
-A. Folow the instructions here for building the IOTDK image
+A. Folow the instructions here for building the Intel IoT Developer Kit image
 https://software.intel.com/en-us/blogs/2015/03/04/creating-a-yocto-image-for-the-intel-galileo-board-using-split-layers.
 You will be able to build the package 'parse-embedded-sdks'. The bitbake recipe
 is here:
